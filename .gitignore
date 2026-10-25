@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Operating System files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ZenML & MLflow local artifacts
+.zen/
+mlruns/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Extracted dataset (archive.zip in data/ is tracked)
+extracted_data/
