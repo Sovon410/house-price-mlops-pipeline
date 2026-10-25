@@ -39,18 +39,18 @@ Trained on the comprehensive Ames Housing dataset with robust outlier mitigation
 
 ```mermaid
 flowchart TD
-    A[📦 Raw Data: archive.zip] --> B[📥 Data Ingestion Step]
-    B --> C[🧹 Handle Missing Values Step]
-    C --> D[⚙️ Feature Engineering Step<br/>Log Transform SalePrice & Gr Liv Area]
-    D --> E[🔍 Outlier Detection Step<br/>IQR / Z-Score Filtering]
-    E --> F[✂️ Data Splitter Step<br/>Train / Test Split]
-    F --> G[🧠 Model Building Step<br/>StandardScaler + LinearRegression]
-    G --> H[📈 Model Evaluator Step<br/>R², MSE, RMSE, MAE]
-    G -. Autolog Artifacts .-> I[(🧪 MLflow Experiment Tracker)]
-    G -. Register Model .-> J[(📦 MLflow Model Registry)]
-    J --> K[🚀 MLflow Model Server<br/>REST API: port 8000]
-    K --> L[🔮 CLI Predictions<br/>sample_predict.py]
-    J --> M[🌐 Interactive Web App<br/>Flask GUI: port 5001]
+    A["📦 Raw Data: archive.zip"] --> B["📥 Data Ingestion Step"]
+    B --> C["🧹 Handle Missing Values Step"]
+    C --> D["⚙️ Feature Engineering Step<br/>Log Transform SalePrice & Gr Liv Area"]
+    D --> E["🔍 Outlier Detection Step<br/>IQR / Z-Score Filtering"]
+    E --> F["✂️ Data Splitter Step<br/>Train / Test Split"]
+    F --> G["🧠 Model Building Step<br/>StandardScaler + LinearRegression"]
+    G --> H["📈 Model Evaluator Step<br/>R-Squared, MSE, RMSE, MAE"]
+    G -.->|Autolog Artifacts| I[("🧪 MLflow Experiment Tracker")]
+    G -.->|Register Model| J[("📦 MLflow Model Registry")]
+    J --> K["🚀 MLflow Model Server<br/>REST API: port 8000"]
+    K --> L["🔮 CLI Predictions<br/>sample_predict.py"]
+    J --> M["🌐 Interactive Web App<br/>Flask GUI: port 5001"]
 ```
 
 ---
