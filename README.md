@@ -128,8 +128,8 @@ Clone the repository and set up a clean Python virtual environment for your plat
 
 ```powershell
 # Clone the repository
-git clone https://github.com/your-username/prices-predictor-system.git
-cd prices-predictor-system
+git clone https://github.com/Sovon410/house-price-mlops-pipeline.git
+cd house-price-mlops-pipeline
 
 # (Optional PowerShell) If script execution is restricted on your system:
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
@@ -152,8 +152,8 @@ pip install -r requirements.txt
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/prices-predictor-system.git
-cd prices-predictor-system
+git clone https://github.com/Sovon410/house-price-mlops-pipeline.git
+cd house-price-mlops-pipeline
 
 # Create virtual environment
 python3 -m venv .venv
